@@ -11,12 +11,7 @@ class RSAKeyGen:
         with open("private_key", "w+", encoding="utf-8") as f:
             f.write(str(self.mod) + "," + str(self.d) + "," + str(self.p) + "," + str(self.q))
 
-        print(f'''
-p - {self.p}
-q - {self.q}
-PUBLIC_KEY (mod, e) - {self.mod}, {self.e}
-PRIVATE_KEY (mod, d) - {self.mod}, {self.d}
-        ''')
+        print(f'p - {self.p}\nq - {self.q}\nPUBLIC_KEY (mod, e) - {self.mod}, {self.e}\nPRIVATE_KEY (mod, d) - {self.mod}, {self.d}')
 
     @staticmethod
     def gen_512() -> int:

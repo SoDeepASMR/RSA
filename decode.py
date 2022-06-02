@@ -42,9 +42,7 @@ class RSADecode:
 
     @staticmethod
     def ChineseTheorem(a, a1, b, b1) -> int:
-        M0 = a1 * b1;
-        m = b1;
-        m1 = a1
+        M0 = a1 * b1; m = b1; m1 = a1
 
         print(f'''
         r1 - {a}
